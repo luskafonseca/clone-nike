@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><img alt="Nike" title="Nike" fetchpriority="high" loading="eager" width="39" height="14" decoding="async" data-nimg="1" srcset="https://static.nike.com.br/v11-68-1/images/brands/logo.svg 1x, https://static.nike.com.br/v11-68-1/images/brands/logo.svg 2x" src="https://static.nike.com.br/v11-68-1/images/brands/logo.svg" style="color: transparent;"></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#">Masculino</a>
+      <a href="#">Feminino</a>
+      <a href="#">Lançamentos</a>
+<div class="search-bar">
+    <input type="text" placeholder="Buscar produtos..." />
+  </div>
+<div class="nav-icons">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Usuário" class="icon" /></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Carrinho" class="icon" /></a>
+  </div>
+    </div>
+
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="carousel" id="heroCarousel">
+      <img src="images/banner1.jpg" class="slide active" />
+      <img src="images/banner2.jpg" class="slide" />
+      <img src="images/banner3.jpg" class="slide" />
+    </div>
+    <div class="hero-text">
+      <h1>Seja ousado com Nike</h1>
+      <p>Explore a nova coleção 2025</p>
+      <a href="#" class="btn">Comprar Agora</a>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="categorias">
+    <h2>Categorias</h2>
+    <div class="categorias-grid">
+      <div class="categoria">
+        <img src="images/categoria1.png" alt="Corrida">
+        <h3>Corrida</h3>
+      </div>
+      <div class="categoria">
+        <img src="images/categoria2.png" alt="Treino">
+        <h3>Treino</h3>
+      </div>
+      <div class="categoria">
+        <img src="images/categoria3.png" alt="Casual">
+        <h3>Casual</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos em Destaque -->
+  <section class="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="carousel-wrapper">
+      <button class="seta left" onclick="scrollCarousel('left')">‹</button>
+      <div class="produtos-carousel" id="produtosCarousel">
+        <div class="produto-card">
+          <img src="images/tenis1.png" alt="Tênis 1">
+          <h3>Air Max Alpha</h3>
+          <p>R$ 499,00</p>
+        </div>
+        <div class="produto-card">
+          <img src="images/tenis2.png" alt="Tênis 2">
+          <h3>Air Zoom</h3>
+          <p>R$ 599,00</p>
+        </div>
+        <div class="produto-card">
+          <img src="images/tenis3.png" alt="Tênis 3">
+          <h3>Nike Revolution</h3>
+          <p>R$ 329,00</p>
+        </div>
+        <div class="produto-card">
+          <img src="images/tenis4.png" alt="Tênis 4">
+          <h3>Nike Infinity</h3>
+          <p>R$ 699,00</p>
+        </div>
+        <div class="produto-card">
+          <img src="images/tenis5.png" alt="Tênis 5">
+          <h3>React Vision</h3>
+          <p>R$ 659,00</p>
+        </div>
+        <div class="produto-card">
+          <img src="images/tenis6.png" alt="Tênis 6">
+          <h3>Nike Pegasus</h3>
+          <p>R$ 749,00</p>
+        </div>
+        <div class="produto-card">
+          <img src="images/tenis7.png" alt="Tênis 7">
+          <h3>Air Force</h3>
+          <p>R$ 799,00</p>
+        </div>
+      </div>
+      <button class="seta right" onclick="scrollCarousel('right')">›</button>
+    </div>
+  </section>
+
+<section class="banner-secao">
+  <div class="banner-container">
+    <img src="images/bannerfinal.jpg" alt="Banner promocional">
+  </div>
+</section>
+
+<section class="mais-categorias-texto">
+  <h2>Mais Categorias</h2>
+  <div class="lista-categorias">
+    <ul>
+      <li>Calçados Masculinos</li>
+      <li>Calçados Femininos</li>
+      <li>Tênis de Corrida</li>
+      <li>Tênis de Basquete</li>
+      <li>Chinelos e Slides</li>
+      <li>Treinamento e Academia</li>
+      <li>Skate</li>
+      <li>Futebol</li>
+      <li>Roupas Masculinas</li>
+      <li>Roupas Femininas</li>
+      <li>Infantil</li>
+      <li>Acessórios e Equipamentos</li>
+      <li>Lançamentos</li>
+      <li>Outlet</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sobre a Nike</h4>
+        <ul>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Sustentabilidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2025 Lucas Fonseca.</p>
+  </footer>
+
+  <script>
+    // Menu mobile
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+
+    // Hero Carousel
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".carousel .slide");
+    setInterval(() => {
+      slides[slideIndex].classList.remove("active");
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
+    }, 4000);
+
+    // Produtos Carousel
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById("produtosCarousel");
+      const scrollAmount = 220;
+      carousel.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
